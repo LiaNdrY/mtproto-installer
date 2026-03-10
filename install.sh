@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # MTProto Proxy (Fake TLS) + Traefik — установка одной командой
-# Все файлы загружаются с https://github.com/itcaat/mtproto-installer
-# Запуск на сервере: curl -sSL https://raw.githubusercontent.com/itcaat/mtproto-installer/main/install.sh | bash
+# Все файлы загружаются с https://github.com/LiaNdrY/mtproto-installer
+# Запуск на сервере: curl -sSL https://raw.githubusercontent.com/LiaNdrY/mtproto-installer/main/install.sh | bash
 
 set -e
 
