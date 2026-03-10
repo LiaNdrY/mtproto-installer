@@ -141,7 +141,7 @@ print_link() {
 
 	SERVER_IP=$(curl -s --connect-timeout 3 ifconfig.me 2>/dev/null || echo "YOUR_SERVER_IP")
 
-	LINK="tg://proxy?server=${SERVER_IP}&port=443&secret=${SECRET}"
+	LINK="tg://proxy?server=${SERVER_IP}&port=8443&secret=${SECRET}"
 
 	echo ""
 	echo -e "${GREEN}--- Ссылка для Telegram ---${NC}"
