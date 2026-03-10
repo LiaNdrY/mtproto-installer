@@ -21,7 +21,7 @@ listen_addr_ipv6 = "::"
 [censorship]
 tls_domain = "1c.ru"
 mask = true
-mask_port = 443
+mask_port = 8443
 fake_cert_len = 2048
 
 [access]
