@@ -1,4 +1,4 @@
-# MTProto Proxy (Fake TLS) + Traefik — общий порт 443
+# MTProto Proxy (Fake TLS) + Traefik — общий порт 8443
 # По SNI домена маскировки (например 1c.ru) трафик идёт в Telemt, остальное можно отдавать другим сервисам.
 # Запуск: скопируйте telemt.toml.example в telemt.toml, подставьте секрет и домен, затем:
 #   docker compose up -d
@@ -10,11 +10,11 @@ services:
     restart: unless-stopped
     command:
       - "--api.dashboard=false"
-      - "--entrypoints.websecure.address=:443"
+      - "--entrypoints.websecure.address=:8443"
       - "--providers.file.directory=/etc/traefik/dynamic"
       - "--providers.file.watch=true"
     ports:
-      - "443:443"
+      - "8443:8443"
     volumes:
       - ./traefik/static:/etc/traefik/static:ro
       - ./traefik/dynamic:/etc/traefik/dynamic:ro
